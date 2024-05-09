@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "WTF Replacer",
+  "version": "1.0",
+  "description": "Replace the text 'What is happening?!' on Twitter and X.com with 'WTF is happening?!'",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/home",
+        "https://x.com/home"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
